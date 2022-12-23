@@ -4,6 +4,7 @@ import ContentRowMovies from './ContentRowMovies';
 import GenresInDb from './GenresInDb';
 import LastMovieInDb from './LastMovieInDb';
 import ContentWrapper from './ContentWrapper';
+import Route404 from './Route404';
 import { Link, Route, Switch } from 'react-router-dom';
 
 
@@ -74,12 +75,9 @@ function SideBar(){
                <Route exact path="/genres" component={GenresInDb}/>
                <Route exact path="/movies" component={LastMovieInDb}/>
                <Route exact path="/contentWrapper" component={ContentWrapper}/>
+               <Route component={Route404}/>
 
                
-
-
-
-
             </Switch>
             
         </React.Fragment>
